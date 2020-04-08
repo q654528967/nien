@@ -1,12 +1,10 @@
 .mySwiper div:first-child h2 a{
     font-size: 0.5em;
-}
-.mySwiper div:first-child h2{
-    font-size: 1.2em;
+    color:#000;
 }
 .mySwiper .fa{
     font-size: 1.5em;
-    color: rgba(255, 108, 19,0.8);
+    color: #ff6600;
     outline: none;
     border: none;
 }
@@ -62,6 +60,9 @@ content:none;
 .mySwiper .card a{
     text-decoration: none;
     color: #000;
+}
+#news>div:first-child>div>div,#notice>div:first-child>div>div{
+    border-bottom: #ff6600 solid 0.15em;
 }
 @media (max-width: 576px){
     .fa-chevron-left{

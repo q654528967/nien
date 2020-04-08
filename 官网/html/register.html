@@ -7,7 +7,6 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/commo.css">
   <title>Document</title>
@@ -40,27 +39,27 @@
 <body>
   <div class="w-100 h-75">
     <div class="container h-100" >
-      <div id="login" class="card shadow my-3 mx-auto ml-sm-auto mr-sm-0" style="width:25em;height:25em;top:50%;transform:translateY(-50%);max-width:95%;max-height:88%;min-height: 24em;">
+      <div id="login" class="card shadow my-3 mx-auto ml-sm-auto mr-sm-0" style="width:25em;height:25em;top:50%;transform:translateY(-50%);max-width:95%;max-height:88%;min-height: 26em;">
         <div class="card-body">
             <ul class="list-group list-group-flush">
               <li class="list-group-item text-center border-bottom-0">
-                <h3>客户业务管理系统</h3>
+                <h3>欢迎注册业务管理系统</h3>
               </li>
               <li class="list-group-item border-bottom-0">
                 <form>
                   <div class="form-group">
-                    <label>客户代码</label>
-                    <input placeholder="请输入客户代码" type="text" class="form-control" id="uname">
+                    <label>用户名</label>
+                    <input placeholder="请输入用户名" type="text" class="form-control" id="uname">
                   </div>
                   <div class="form-group">
-                    <label>客户密码</label>
-                    <input type="password" placeholder="请输入密码" class="form-control" id="upwd">
+                    <label>密码</label>
+                    <input placeholder="请输入密码" type="password" class="form-control" id="upwd">
                   </div>
-                  <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">登录</button>
+                  <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">马上注册</button>
                 </form>
               </li>
               <li class="list-group-item text-center border-bottom-0 d-flex">
-                <a href="#">忘记密码?</a><span class="ml-auto">还没账号?</span><a href="./register.html">现在注册</a>
+                <a href="javascript:;"></a><span class="ml-auto">已有账号?</span><a href="./login.html">马上登陆</a>
               </li>
             </ul>
         </div>
@@ -75,49 +74,8 @@
 <script src="../js/header.js"></script>
 <script src="../js/footer.js"></script>
 <script>
-  $(function(){
-    $('#toast1').toast({
-      delay:2000
-    })
-  })
 {
-  let $uname=$('#uname'),$upwd=$('#upwd'),$submit=$('#submit')
-  $uname.focus(()=>{
-    if($upwd.tooltip) $upwd.tooltip('hide')
-    if($uname.tooltip) $uname.tooltip('hide');
-  }).blur(()=>{
-    //if里面填验证规则
-    if($uname.val().length<4){
-      $uname.tooltip({
-        title:'用户名未输入或者格式不正确',
-        placement:'left',
-        trigger:'manual'
-      }).tooltip('toggle')
-    }
-  })
-  $upwd.focus(()=>{
-    if($upwd.tooltip) $upwd.tooltip('hide')
-  }).blur(()=>{
-    //if里面是验证规则
-    if($upwd.val().length==0){
-      let upwd=$upwd
-      upwd.tooltip({
-        title:'密码不能为空',
-        placement:'left',
-        trigger:'manual'
-      }).tooltip('toggle')
-    }
-  })
-  $submit.click((e)=>{
-    e.preventDefault();
-    let uname=$uname.val()
-    let upwd=$upwd.val()
-    if(uname=='' || upwd==''){
-      $('#toast1').toast('show')
-    }else{
-    //这里发起请求
-    }
-  })
+	
 }
 </script>
 </body>

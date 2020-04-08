@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../js/jquery-3.4.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <title>Document</title>
+  <style>
+  #tt h4{
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    font-size: 1rem;
+    margin-top: 0;
+    margin: 10px 0;
+    font-weight: 700;
+  }
+  #tt .card{
+    color: #8e99a2;
+  }
+  #tt table{
+    color:inherit;
+  }
+  </style>
+</head>
+<body>
+  <div class="container-fluid" id="tt">
+    <div id="app">
+      <div class="row">
+        <div class="col-12">
+          <div class="page-title-box d-flex">
+            <h4 class="page-title">发货运单 - 27 Mar 2020 </h4> 
+            <div class="my-auto ml-auto d-flex">
+              <a href="/label-history/1527115332/download" target="_blank" class="btn btn-outline-info mr-2">下载运单</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="header-title">参考号1: JO0</h4>
+              <h4 class="header-title">参考号2: -</h4>
+              <h4 class="header-title">Customer Ship ID: -</h4>
+              <h4 class="header-title">服务: Ground Freight</h4>
+              <hr>
+              <h4 class="header-title">发自</h4>
+              <p>Jessica, 556 Vanguard Way Ste C, US, 92821, Brea, CA</p>
+              <hr>
+              <h4 class="header-title">发到</h4>
+              <p>asdasd, 3292 E Holmes Rd, US, 38118-8102, Memphis, TN</p>
+              <hr>
+              <h4 class="header-title">付款</h4>
+              <p>$ -176.16</p>
+              <hr>
+              <h4 class="header-title">总重量</h4>
+              <p>10 LB</p>
+              <hr>
+              <h4 class="header-title">汽油</h4>
+              <p>$ 11.34</p>
+              <hr>
+              <h4 class="header-title">杂项费用</h4>
+              <p>-</p>
+              <hr style="border-width: 5px;">
+              <h4 class="header-title">总价</h4>
+              <p>$ 8.39</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="header-title mb-3">1 跟单号</h4>
+              <table class="table mb-0">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th class="text-center">高,低,宽</th>
+                    <th class="text-center">跟单号</th>
+                    <th class="text-center">状态</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <th class="text-center">15, 15, 15</th>
+                    <th class="text-center">1Z7WE3150389872846</th>
+                    <th class="text-center">
+                      <a href="/shipping-label/ups/1Z7WE3150389872846/track" class="btn btn-outline-success">跟踪</a>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

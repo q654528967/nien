@@ -42,11 +42,7 @@ header li div{
 header li:last-child div{
     border: none;
 } */
-#nav{
-font-size:18px;
-font-weight: initial;
 
-}
-#nav li.active a{
-    color: #e15522;;
-}
+/* #nav li.active a{
+    color: #ff6600;
+} */

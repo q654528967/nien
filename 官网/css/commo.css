@@ -4,7 +4,44 @@
 .adv li>div{
   width: 7vmax;
 }
+.imgHover img{
+  transform: scale(1);
+}
+.imgHover img{
+  transform: scale(1);
+  transition: all 0.7s;
+}
 .imgHover img:hover{
-  transform:scale(1.1);
-  transition: all 0.5s;
+  transform: scale(1.05);
+}
+.btn-primary{
+  background:linear-gradient(rgb(230, 111, 67),rgb(225, 85, 34));
+  outline: none;
+  border:none;
+}
+.btn:focus{
+  box-shadow: 0 0 0 0.2rem rgba(230, 111, 67, 0.25) !important;
+}
+input:focus{
+  border:rgb(230, 111, 67) !important;
+  box-shadow: 0 0 0 0.2rem rgba(230, 111, 67, 0.25) !important;
+}
+#nav{
+  font-size:18px;
+  font-weight: initial;
+}
+.orangeBorderBottom{
+  border-bottom:#ff6600 solid 0.15em ;
+}
+h1, h2, h3, h4, h5, h6{
+  color: #525659;
+}
+body{
+  font-family: 'Open Sans', 'Raleway', Arial, "Alibaba Sans", sans-serif;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+  -webkit-appearance: none !important;            
+}
+input[type="number"]{
+  -moz-appearance:textfield;
 }
