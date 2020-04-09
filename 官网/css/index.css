@@ -1,9 +1,9 @@
 #develop h2{
     font-size: 2rem;
 }
-#develop>div{
+/* #develop>div{
     height: 100vh;
-}
+} */
 .col-form-label{
     line-height: 2.5;
 }
@@ -102,4 +102,12 @@ section{
 }
 section{
     overflow: hidden;
+}
+.event2{
+    margin-top: 42px;
+    margin-left: 20px;
+    width: 46%;
+}
+.pos-left {
+    margin-bottom: 1.5em;
 }

@@ -72,7 +72,5 @@ $('#nav li>a').each((index,el)=>{
   if(code==true){
     el.style.color="#ff6600"
   }
-
 })
-
 })() 

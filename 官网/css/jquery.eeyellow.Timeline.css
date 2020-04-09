@@ -68,12 +68,12 @@
     width: 47%;
     padding: 10px 0 0;
     margin-top: 31px;
-    background-color: #CCC;
+    /* 原本ccc */
+    background-color: #fff;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px
 }
-
 .VivaTimeline dl dd .events:before {
     position: absolute;
     top: 12px;
@@ -100,7 +100,8 @@
 .VivaTimeline dl dd .events .events-body {
     overflow: hidden;
     zoom: 1;
-    background-color: #EEE;
+    /* 原本eee */
+    background-color: #fff;
     padding: 10px;    
 }
 .VivaTimeline dl dd .events .events-body .row{
@@ -135,42 +136,58 @@
 
 .VivaTimeline dl dd.pos-right .time {
     margin-left: -100px;
-    text-align: right
+    text-align: right;
 }
 
 .VivaTimeline dl dd.pos-right .events {
-    float: right
+    float: right;
+}
+/* 自定义event2 */
+.VivaTimeline dl dd.pos-right .event2 {
+    float: left;
+}
+/* 自定义event2 */
+.VivaTimeline dl dd.pos-left .event2 {
+    float: right;
 }
 
-.VivaTimeline dl dd.pos-right .events:before {
+/* .VivaTimeline dl dd.pos-right .events:before {
     left: -12px;
-    border-color: transparent #CCC transparent transparent
+    border-color: transparent #CCC transparent transparent;
+} */
+/* 自定义三角形颜色 */
+.VivaTimeline dl dd.pos-right .events:before{
+    left: -12px;
+    border-color: transparent #fff transparent transparent;
 }
-
 .VivaTimeline dl dd.pos-left .time {
     margin-left: 0;
-    text-align: left
+    text-align: left;
 }
 
 .VivaTimeline dl dd.pos-left .events {
-    float: left
+    float: left;
 }
 
+/* .VivaTimeline dl dd.pos-left .events:before {
+    right: -12px;
+    border-color: transparent transparent transparent #CCC;
+} */
+/* 自定义三角形颜色 */
 .VivaTimeline dl dd.pos-left .events:before {
     right: -12px;
-    border-color: transparent transparent transparent #CCC
+    border-color: transparent transparent transparent #fff;
 }
-
 .VivaTimeline .carousel-indicators{
     bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
     .VivaTimeline dl:before {
-        left: 3%
+        left: 3%;
     }
     .VivaTimeline dl dt {
-        margin: 0 30px 30px
+        margin: 0 30px 30px;
     }
     .VivaTimeline dl dd .circ {
         left: 3%
