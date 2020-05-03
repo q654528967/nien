@@ -1,0 +1,19 @@
+.FTable tr td ,.FTable th{
+  vertical-align: middle;
+  text-align: center;
+}
+.tbEn{
+  color:#666;
+  font-size: 14px;
+  font-weight: normal;
+}
+.ky{
+  color: #666;
+}
+.hk{
+  font-weight: bolder;
+  font-size: large;
+}
+.bj{
+  color:#e15522;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/jquery-3.4.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link href="../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/page4.css">
+  <title>Document</title>
+  <link rel="shortcut icon" href="../img/index/title_logo.ico" type="image/x-icon">
+  <link rel="icon" href="../img/index/title_logo.ico" type="image/x-icon">
+</head>
+<body>
+  <h3>运价查询</h3>
+  <div class="entry-content">
+		<section>
+    <div class="container">
+      <div class="search-destination mt-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md align-items-end">
+                <div class="form-group">
+                  <label for="qyg">始发港</label>
+                  <div class="form-field input-group" style="width: 100%;"><i class="clearable glyphicon glyphicon-remove fa fa-plus" style="position: absolute; top: calc(50% - 6px); transform: rotate(45deg); z-index: 4; cursor: pointer; width: 14px; line-height: 14px; text-align: center; font-size: 12px; display: none;"></i>
+                    <input type="text" class="form-control" placeholder="始发港" id="qyg" autocomplete="off" style="border-radius: 4px;">
+                    <div class="input-group-btn" style="position: relative;">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="" style="display: none;">
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu" style="padding-top: 0px; max-height: 375px; max-width: 800px; overflow: auto; width: auto; transition: all 0.3s ease 0s; word-break: keep-all; white-space: nowrap;">
+                      </ul>
+                    </div>
+                    <div class="icon"><i class="fa fa-compass"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md align-items-end">
+                <div class="form-group">
+                  <label for="mdg">目的港</label>
+                  <div class="form-field" style="width: 100%;"><i class="clearable glyphicon glyphicon-remove fa fa-plus" style="position: absolute; top: calc(50% - 6px); transform: rotate(45deg); z-index: 4; cursor: pointer; width: 14px; line-height: 14px; text-align: center; font-size: 12px; display: none;"></i>
+                    <input type="text" class="form-control" placeholder="目的港" id="mdg" autocomplete="off" style="border-radius: 4px;">
+                    <div class="input-group-btn" style="position: relative;">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="" style="display: none;">
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu" style="padding-top: 0px; max-height: 375px; max-width: 800px; overflow: auto; width: auto; transition: all 0.3s ease 0s; word-break: keep-all; white-space: nowrap;">
+                      </ul>
+                    </div>
+                    <div class="icon"><i class="fa fa-map-marker"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md align-items-end">
+                <div class="form-group">
+                  <label for="hkgs">航空公司</label>
+                  <div class="form-field" style="width: 100%;"><i class="clearable glyphicon glyphicon-remove fa fa-plus" style="position: absolute; top: calc(50% - 6px); transform: rotate(45deg); z-index: 4; cursor: pointer; width: 14px; line-height: 14px; text-align: center; font-size: 12px; right: 12px; display: none;"></i>
+                    <input type="text" class="form-control" placeholder="航空公司" id="hkgs" autocomplete="off" style="border-radius: 4px;">
+                    <div class="input-group-btn" style="position: relative;">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="" style="display: none;">
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-right" role="menu" style="padding-top: 0px; max-height: 375px; max-width: 800px; overflow: auto; width: auto; transition: all 0.3s ease 0s; word-break: keep-all; white-space: nowrap;">
+                      </ul>
+                    </div>
+                    <div class="icon"><i class="fa fa-map-marker"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md align-items-end">
+                <div class="form-group">
+                  <label for="input-jfzl">重量</label>
+                  <div class="form-field">
+                    <div class="icon"><i class="fa fa-map-marker"></i></div>
+                    <input type="text" class="form-control checkout_date" placeholder="重量" id="input-jfzl">
+                    <p class="cacl-result">计费重量：<span class="count" id="jfzl">0</span>/kg</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md align-items-end">
+                <div class="form-group">
+                  <label for="input-hwbz">体积</label>
+                  <div class="form-field">
+                    <div class="icon"><i class="fa fa-map-marker"></i></div>
+                    <input type="text" class="form-control checkout_date" placeholder="体积" id="input-hwbz">
+                    <p class="cacl-result">货物比重：<span class="count" id="hwbz">0</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md align-self-center mM">
+                <div class="form-group">
+                  <div class="form-field">
+                    <input type="submit" value="查询" class="form-control btn btn-primary" id="search">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-2 mb-2 p-2" id="toolbar">
+        <div class="row">
+          <div class="dropdown col-md-auto mb-2 myselect" relatedtarget="" id="hkgs-dropdown">
+            <button type="button" class="btn btn-outline-primary dropdown-toggle myselet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              航空公司(不限)
+            </button>
+            <div class="dropdown-menu overflow-auto" style="max-height: 500px"></div>
+          </div>
+          <div class="dropdown col-md-auto mb-2 myselect" relatedtarget="" id="zhmdg-dropdown">
+            <button type="button" class="btn btn-outline-primary dropdown-toggle myselet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              中转港(不限)
+            </button>
+            <div class="dropdown-menu overflow-auto" style="max-height: 500px"></div>
+          </div>
+          <div class="dropdown col-md-auto mb-2 myselect" relatedtarget="" id="iszd-dropdown">
+            <button type="button" class="btn btn-outline-primary dropdown-toggle myselet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              直达选项(不限)
+            </button>
+            <div class="dropdown-menu overflow-auto" style="max-height: 500px">
+              <a class="dropdown-item active" data-value="false" href="#">直达选项(不限)</a>
+              <a class="dropdown-item" data-value="true" href="#">直达</a>
+              <a class="dropdown-item" data-value="false" href="#">中转</a>
+            </div>
+          </div>
+          <div class="dropdown col-md-auto mb-2 myselect" relatedtarget="" id="tp-dropdown">
+            <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              托盘选项(不限)
+            </button>
+            <div class="dropdown-menu overflow-auto" style="max-height: 500px">
+              <a class="dropdown-item active" data-value="" href="#">托盘选项(不限)</a>
+              <a class="dropdown-item" data-value="tp" href="#">托盘</a>
+              <a class="dropdown-item" data-value="sh" href="#">散货</a>
+            </div>
+          </div>
+          <div class="dropdown col-md-auto mb-2 myselect" relatedtarget="" id="update-time-dropdown">
+            <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              更新时间(综合)
+            </button>
+            <div class="dropdown-menu overflow-auto" style="max-height: 500px">
+              <a class="dropdown-item active" data-value="" href="#">更新时间(综合)</a>
+              <!-- <a class="dropdown-item" data-value="asc" href="#">升序</a> -->
+              <a class="dropdown-item" data-value="desc" href="#">最新</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div id="toolbar"></div> -->
+      </div>
+
+    </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="wrap row">
+          <div class="selectBox col-12 col-xl-3 col-lg-3 col-sm-12 p-0">
+            <p class="country_tips">选择国家：</p>
+            <ul class="list-unstyled">
+              <li onclick="flyCity(113.020892,28.143873)" class="cityPoint active">长沙</li>
+              <li onclick="flyCity(121.702421,31.086319)" class="cityPoint">上海</li>
+              <li class="cityPoint" data-city="新加坡">新加坡</li>
+              <li class="cityPoint" data-city="曼谷">泰国</li>
+              <li class="cityPoint" data-city="河内">越南</li>
+              <li class="cityPoint" data-city="布拉格">捷克</li>
+              <li class="cityPoint" data-city="马尼拉">菲律宾</li>
+              <li class="cityPoint" data-city="大阪">日本</li>
+              <li class="cityPoint" data-city="莫斯科">俄罗斯</li>
+              <li class="cityPoint" data-city="洛杉矶">美国</li>
+              <li class="cityPoint" data-city="雅加达">印度尼西亚</li>
+              <li class="cityPoint" data-city="吉隆坡">马来西亚</li>
+              <li class="cityPoint" data-city="悉尼">澳大利亚</li>
+            </ul>
+          </div>
+          <div class="map_wrap col-12 col-xl-9 col-lg-9 col-sm-12 p-0">
+            <div id="bMap"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+	<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=ndKBkcYQVw0EvjTPeNCdkCXfVlk2Fgm1"></script>
+<script>
+ {
+  var map = new BMap.Map("bMap");
+	var point = new BMap.Point(116.404, 39.915);
+	map.centerAndZoom(point, 5);
+	map.disableDoubleClickZoom(true);
+		
+	// 编写自定义函数,创建标注
+	function addMarker(point,label){
+		var marker = new BMap.Marker(point);
+		map.addOverlay(marker);
+		marker.setLabel(label);
+	}
+  var point1 = new BMap.Point(113.020892,28.143873);
+  var label1 = new BMap.Label(`<div class="info"><a href="https://www.baidu.com">长沙</a>
+      <div>
+        <img src="../img/page4/label.png" />  
+      </div>
+    </div>`,{offset:new BMap.Size(0,-40)});
+  var point2 = new BMap.Point(121.702421,31.086319);
+  var label2 = new BMap.Label(`<div class="info"><a href="https://www.baidu.com">上海</a>
+      <div>
+        <img src="../img/page4/label.png" />  
+      </div>
+    </div>`,{offset:new BMap.Size(0,-40)});
+  addMarker(point1,label1);
+  addMarker(point2,label2);
+  map.addEventListener('click', function(e) {
+    console.log(e);
+  })
+  map.enableScrollWheelZoom(true);
+  map.setMaxZoom(6)
+  function flyCity(x,y){
+  map.panTo(new BMap.Point(x,y))
+  }
+}
+</script>
+</body>
+</html>

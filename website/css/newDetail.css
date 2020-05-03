@@ -1,0 +1,29 @@
+a:link{
+  color:#000;
+}
+a{
+  color:#000;
+}
+.newsFooter a{
+  color:rgb(225, 85, 34);
+}
+.newsRight>div:first-child a{
+  color:rgb(225, 85, 34);
+}
+.newsRight>div:first-child span{
+  color:#ccc
+}
+.card-footer{
+  background-color:#fff;
+}
+.text-justify p{
+  text-indent:2em;
+}
+.newSubDetail{
+  font-size: 12px;
+  color:grey;
+}
+.newContainer img{
+  width:100%;
+  margin: 1em auto;
+}

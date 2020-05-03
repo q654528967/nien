@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">    
+    <script src="https://unpkg.com/swiper/js/swiper.js"> </script>  
+    <link href="../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/commo.css">
+    <link rel="stylesheet" href="../css/mySwiper.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/jquery.eeyellow.Timeline.css">
+    <title>首页_尼恩供应链管理（上海）有限公司</title>
+    <link rel="shortcut icon" href="../img/index/title_logo.ico" type="image/x-icon">
+    <link rel="icon" href="../img/index/title_logo.ico" type="image/x-icon">
+</head>
+<body style="user-select:none;">
+    <main>
+        <div class="container-fluid p-0">
+            <section id="slider">
+                <div id="swiperSlide" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="../img/index/images/bate1_20200503112013_03.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="../img/index/images/bate2_20200503111447_03.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="../img/index/images/bate3_20200503111500_03.png" alt="">
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <img class="img-fluid" src="../img/index/1-1f6231431390-l.jpg" alt="">
+                        </div> -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!-- <section id="ndv" class="imgHover mt-5">
+                <ul class="list-unstyled d-flex justify-content-around text-center adv">
+                    <li data-toggle="modal" data-target="#quotedPrice">
+                        <div class="pb-2 m-auto">
+                            <img class="img-fluid" src="../img/index/base1.gif" alt="">
+                        </div>
+                        <h5>一键报价</h5>
+                    </li>
+                    <li data-toggle="modal" data-target="#Business">
+                        <div class="pb-2 m-auto">
+                            <img class="img-fluid" src="../img/index/base2.gif" alt="">
+                        </div>
+                        <h5>业务查询</h5>
+                    </li>
+                    <li>
+                        <div class="pb-2 m-auto">
+                            <img class="img-fluid" src="../img/index/base3.gif" alt="">
+                        </div>
+                        <h5>用户登录</h5>
+                    </li>
+                </ul>
+                //模态窗1
+                <div class="modal fade" id="quotedPrice" tabindex="-1" role="dialog" aria-labelledby="quotedPriceTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="quotedPriceTitle">一键报价</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-2 col-form-label">xxx:</label>
+                                        <div class="col-sm-10 my-auto">
+                                            <input type="password" class="form-control" id="inputPassword">
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                //模态窗2
+                <div class="modal fade" id="Business" tabindex="-1" role="dialog" aria-labelledby="BusinessTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center" id="BusinessTitle">业务查询</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- <section id="develop" class="my-5 text-center">
+                <h2 class="mb-5"><span class="orangeBorderBottom">公司发展</span></h2>
+                <div class="my-5">
+                    <h5>公司将秉持以“客户”为中心的理念，始终如一稳定的发展中美专线。</h5>
+                    <h5>下步将在中国--美国直线的基础上发展中国--东南亚--美国中转线路,为更多的客户带来更优质且便捷的服务。</h5>
+                </div>
+                <div class="container">
+                    <video width="100%" autobuffer controls="controls">
+                        <source src="../video/guanwang.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section> -->
+            <!-- <section id="notice" class="mySwiper mb-2 position-relative">
+                <div class="mx-4">
+                    <div>
+                        <div class="row m-0">   
+                            <h2 class="col-12 col-sm-10 p-0 m-0 pb-2">公司发布通知 <a href="./news.html">显示更多详情</a></h2>
+                            <div class="col-sm-2 m-0 d-flex justify-content-between align-items-center" style="position: static;">
+                                <i class="fa fa-chevron-left sl1 mx-2"></i>
+                                <i class="fa fa-chevron-right sr1 mx-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="swiper1" class="swiper-container py-3 position-relative imgHover">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swbg w-100 px-4">
+                            <div class="row m-0 justify-content-between">
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="./newDetail.html">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swbg w-100 px-4">
+                            <div class="row m-0 justify-content-between">
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <section id="business" class="py-5" style="background: #eee;">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h2><span class="orangeBorderBottom  pb-1 d-inline-block  position-relative">业务范围
+                            <div class="position-absolute"></div>
+                        </span></h2>
+                        <h5 class="my-5">10余年操作经验确保起航无忧！接待同行拼货，解决工厂客户所需，高效清关，双清到门，邮政小包</h5>
+                    </div>
+                </div>
+                <ul class="row list-unstyled m-auto text-justify" style="max-width: 70rem;">
+                    <li class="col-12 col-md-6 my-3">
+                        <a href="./freight.html" class="row bg-white shadow mx-3 p-3">
+                            <div class="col-md-4 col-12">
+                                <img class="img-fluid" src="../img/page3/3_07.gif" alt="">
+                            </div>
+                            <div class="col-md-8 col-12">
+                                <h5 class="font-weight-bolder">货运代理</h5>
+                                <p>尼恩在全国拥有300多名专业跨境物流服务人员，3000多平米仓库及货物分拣操作中心，线下直营网点遍布深圳、广州、义乌。日处理跨境电商出口货量10吨+，成为了20万+客户选择，同行信赖跨境物流提供商和跨境电商物流解决方案服务商。</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-6 my-3">
+                        <a id="leiping" href="./business.html" class="row bg-white shadow mx-3 p-3">
+                            <div class="col-md-4 col-12">
+                                <img class="img-fluid" src="../img/page3/3_11.gif" alt="">
+                            </div>
+                            <div class="col-md-8 col-12">
+                                <h5 class="font-weight-bolder">FBA专线</h5>
+                                <p>我司的FBA全程服务和海外仓储是我司最为稳定且全程可自行操控的渠道。FBA头程：我司采用集装箱与航空运输。集装箱与美森，APL等船公司合作，航程短而快。目的港为美森与APL自有码头，不存在任何罢工风险，清关提柜速度皆比同行业者简便且迅速。FBA尾程：我司在美专业的清关团队，为客户解决货物在清关中遇到的任何问题，提高货物在送达之前的安全性。</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-6 my-3">
+                        <a href="./bags.html" class="row shadow bg-white mx-3 p-3">
+                            <div class="col-md-4 col-12">
+                                <img class="img-fluid" src="https://www.qhi-logistics.com/uploads/180516/1-1P516095G2610.jpg" alt="">
+                            </div>
+                            <div class="col-md-8 col-12">
+                                <h5 class="font-weight-bolder">国际小包</h5>
+                                <p>依托公司的网络资源和清关系统，整合专线航空或海运和目的国快递公司运输资源进行全路由可视化，具备性价比高、清关便捷、安全高效路由信息回传快速等优点。</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-6 my-3">
+                        <a href="./toboth.html" class="row shadow bg-white mx-3 p-3">
+                            <div class="col-md-4 col-12">
+                                <img class="img-fluid" src="https://www.qhi-logistics.com/uploads/180516/1-1P516095TH06.jpg" alt="">
+                            </div>
+                            <div class="col-md-8 col-12">
+                                <h5 class="font-weight-bolder">海外仓储+一件代发</h5>
+                                <p>尼恩在加州拥有超3000平的海外仓库，为客户提供海外仓储服务，更开放仓库全景监控录像给用户，使客户能够全天候更全面了解货物的情况。</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section id="advantage" class="p-5">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2><span class="pb-1 d-inline-block  position-relative">尼恩供应链一站式搞定您的国际物流
+                            <div class="position-absolute"></div>
+                        </span></h2>
+                    </div>
+                </div>
+                <div class="mt-2 container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="VivaTimeline">
+                                <dl>
+                                    <dd class="pos-right clearfix">
+                                        <div class="circ"></div>
+                                        <div class="events">
+                                            <div class="events-header text-left">
+                                                <h4 class="pl-3">国际海运空运航线报价更精准经验丰富能处理高难度货物通关快</h4>
+                                            </div>
+                                            <div class="events-body">
+                                                <div class="row">
+                                                    <div class="events-desc">
+                                                        <p>我司采用集装箱与航空运输。集装箱与美森，APL等船公司合作，航程短而快。目的港为美森与APL自有码头，不存在任何罢工风险，清关提柜速度皆比同行业者简便且迅速。航空运输与美国联合航空公司、达美航空、国航等中美航空公司签定包板协议，拥有多条空运航线，可根据货物目的地来安排航线，更大程度上减少货物运输时间。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event2">
+                                            <img class="img-fluid" src="https://www.qhi-logistics.com/images/sup_p1.jpg" alt="">
+                                        </div>
+                                    </dd>
+                                    <dd class="pos-left clearfix">
+                                        <div class="circ"></div>
+                                        <div class="events">
+                                            <div class="events-header text-left">
+                                                <h4 class="pl-3">清关实力强灵活处理各国报关合理安排拖车,仓库,保障服务·服务全面</h4>
+                                            </div>
+                                            <div class="events-body">
+                                                <div class="row">
+                                                    <div class="events-desc">
+                                                        <p>我司在美专业的清关团队，为客户解决货物在清关中遇到的任何问题，提高货物在送达之前的安全性。对入库有严格时间要求的客户采用24小时专程卡车派送方式将货物送抵至亚马逊仓库。减少派送时间，为亚马逊卖家减少繁琐的入库手续，更降低了货物丢包率等更种影响店铺销售情况。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event2">
+                                            <img class="img-fluid" src="https://www.qhi-logistics.com/images/sup_p2.jpg" alt="">
+                                        </div>
+                                    </dd>
+                                    <dd class="pos-right clearfix">
+                                        <div class="circ"></div>
+                                        <div class="events">
+                                            <div class="events-header text-left">
+                                                <h4 class="pl-3">优质的海外仓储，让您补货无忧，更有监控录像</h4>
+                                            </div>
+                                            <div class="events-body">
+                                                <div class="row">
+                                                    <div class="events-desc">
+                                                        <p>许多客户都有无法及时补货而导致客户流失及亚马逊店铺排名下降的问题。我司在加州拥有超3000平的海外仓库，为客户提供海外仓储服务，更开放仓库全景监控录像给用户，使客户能够全天候更全面了解货物的情况。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event2">
+                                            <img class="img-fluid" src="https://www.qhi-logistics.com/images/sup_p3.jpg" alt="">
+                                        </div>
+                                    </dd>
+                                    <dd class="pos-left clearfix">
+                                        <div class="circ"></div>
+                                        <div class="events">
+                                            <div class="events-header text-left">
+                                                <h4 class="pl-3">专业的IT团队,更快更精确也更贴心的系统</h4>
+                                            </div>
+                                            <div class="events-body">
+                                                <div class="row">
+                                                    <!-- <div class="col-auto col-sm-4  pull-left">
+                                                        <img src="../img/page3/3_11.gif" class="events-object img-fluid img-rounded">
+                                                    </div> -->
+                                                    <div class="events-desc">
+                                                        <p>全新的客户管理系统，增加多种新功能，响应速度更快，界面更美观，流程更精简，拒绝繁琐。</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event2">
+                                            <img class="img-fluid" src="https://www.qhi-logistics.com/images/sup_p6.jpg" alt="">
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section id="news" class="mySwiper my-3 position-relative imgHover">
+                <div class="mx-4">
+                    <div>
+                        <div class="row m-0">   
+                            <h2 class="col-12 col-sm-10 p-0 m-0 pb-2">公司发布新闻 <a>显示更多详情</a></h2>
+                            <div class="col-sm-2 m-0 d-flex justify-content-between align-items-center" style="position: static;">
+                                <i class="fa fa-chevron-left sl2"></i>
+                                <i class="fa fa-chevron-right sr2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="swiper2" class="swiper-container py-3">
+                    <div class="swiper-wrapper mb-2">
+                        <div class="swiper-slide swbg w-100 px-4">
+                            <div class="row m-0 justify-content-between">
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="./newDetail.html">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swbg w-100 px-4">
+                            <div class="row m-0 justify-content-between">
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex align-items-center">
+                                    <div class="card overflow-hidden">
+                                        <a href="javascript:;"><img src="../img/index/news_test.jpg" class="card-img-top"></a>
+                                        <div class="card-body px-2 py-3">
+                                          <h5 class="card-title m-0"><a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊</a></h5>
+                                        </div>
+                                        <div class="card-footer d-flex">
+                                          <small class="text-muted">2020-03-24 11:21:32</small>
+                                          <small class="text-muted ml-auto"><a href="javascript:">阅读更多</a> </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <section id="news2" style="background: #eee;">
+                <div class="container">
+                    <div class="row py-4">
+                        <div class="col-12 text-center">
+                            <h2>
+                                <span class="pb-1 position-relative">
+                                    新闻资讯
+                                    <div class="position-absolute"></div>
+                                </span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row m-2 justify-content-between text-center">
+                        <div class="col-12 col-sm-6 my-3">
+                            <h4><a class="text-white" href="javascript:;">国际快递新闻</a></h4>
+                            <div class="row">
+                                <div class="col-5 pr-0">
+                                    <img class="img-fluid" src="http://www.tw-log.com/User/TWLOG/UPIMG/Contents/2014/20121229191013091309.jpg" alt="">
+                                </div>
+                                <ul class="col-7 pl-0 list-unstyled">
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">东航暂停所有国际、港澳台地区航班的选座和网上办登机牌服务</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">巴拿马城海运费疫情冲击 易捷航空停飞所有飞机</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">国际空运发改委：按2030年货邮吞吐量330万吨规划设计鄂州机场 预计2021年底或2022年初投运</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 my-3">
+                            <h4><a class="text-white" href="javascript:;">跨境物流新闻</a></h4>
+                            <div class="row">
+                                <div class="col-5 pr-0">
+                                    <img class="img-fluid" src="http://www.tw-log.com/User/TWLOG/UPIMG/Contents/2020-030513-3151918.jpg" alt="">
+                                </div>
+                                <ul class="col-7 pl-0 list-unstyled">
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 my-3">
+                            <h4><a class="text-white" href="javascript:;">国际货运优惠</a></h4>
+                            <div class="row">
+                                <div class="col-5 pr-0">
+                                    <img class="img-fluid" src="https://rs1.huanqiucdn.cn/dp/api/images/imageDir/befc3e818b8ef1b0f94d72d7dc1aa16c.jpg" alt="">
+                                </div>
+                                <ul class="col-7 pl-0 list-unstyled">
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 my-3">
+                            <h4><a class="text-white" href="javascript:;">新客户体验</a></h4>
+                            <div class="row">
+                                <div class="col-5 pr-0">
+                                    <img class="img-fluid" src="https://www.qhi-logistics.com/images/sup_p6.jpg" alt="">
+                                </div>
+                                <ul class="col-7 pl-0 list-unstyled">
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                    <li class="py-2">
+                                        <a href="javascript:;">印度或要禁止电商平台销售直销产品，亚马逊印度或要禁止电商平台销售直销产品，亚马逊</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="partner" class="mt-3 mx-4">
+                <div class="row m-0">
+                    <h2 class="col-12 col-sm-10 p-0 m-0 pb-2">合作伙伴</h2>
+                </div>
+                <div class="swiper-container my-3 row m-0" id="swiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide active-slider">
+                            <a href="https://www.ups.com/" target="_blank">
+                                <img class="img-fluid" src="../img/index/logo1.jpg" alt="ups">
+                            </a>
+                        </div>
+                        <div class="swiper-slide active-slider">
+                            <a href="https://www.alibaba.com/" target="_blank">
+                                <img class="img-fluid" src="../img/index/logo2.jpg" alt="alibaba">
+                            </a>
+                        </div>
+                        <div class="swiper-slide active-slider">
+                            <a href="https://www.aliexpress.com/" target="_blank"><img class="img-fluid" src="../img/index/logo3.jpg" alt="aliexpress"></a> 
+                        </div>
+                        <div class="swiper-slide active-slider">
+                            <a href="https://www.amazon.cn/" target="_blank"><img class="img-fluid" src="../img/index/logo4.jpg" alt="amazon"></a> 
+                        </div>
+                        <div class="swiper-slide active-slider">
+                            <a href="https://www.aramex.com/" target="_blank"><img class="img-fluid" src="../img/index/logo5.jpg" alt="aramex"></a> 
+                        </div>
+                        <div class="swiper-slide active-slider">
+                            <a href="https://www.tnt.com/" target="_blank">
+                                <img class="img-fluid" src="../img/index/logo6.jpg" alt="tnt">
+                            </a> 
+                        </div>
+                        <div class="swiper-slide active-slider">
+                            <a href="https://www.dhl.com/" target="_blank"><img class="img-fluid" src="../img/index/logo7.jpg" alt="dhl"></a> 
+                        </div>
+                        <div class="swiper-slide active-slider">
+                            <a href="https://www.fedex.com/" target="_blank"><img class="img-fluid" src="../img/index/logo8.jpg" alt="fedex"></a> 
+                        </div>
+                        <div class="swiper-slide active-slider d-flex">
+                                <div class="svg-container m-auto">
+                                    <a href="http://www.apl.com/" target="_blank">
+                                        <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                        y="0px" viewBox="0 0 536 327" preserveAspectRatio="xMinYMin meet">
+                                            <g id="CMA_CGM">
+                                            </g>
+                                            <g id="ANL">
+                                            </g>
+                                            <g id="Calque_3">
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <path fill="#FF0000" d="M57,45.3c0.9,0,1.8,0.1,2.7,0.1c58.4,0,116.8,0,175.2,0c1.4,0,2.7,0.1,4.1,0.3c1.7,0.3,3.2,1.2,4.2,2.7
+                                                                c2.5,3.7,0.7,6.3-0.1,9.2c-0.5,1.7-0.1,3.6,0.9,5c2.8,3.7,7.8,3.1,10-0.3c0.6-1,7.3-17.7,7.6-19.1c-3.6,0-7.1,0-10.7,0
+                                                                c-1.4,0-2.1,1.1-3.3,2.3c0.4-3.4,0.6-6.3,1.5-9c0.8-2.5,3.5-3,6.8-1.7c1.3,0.5,2.8,0.5,4-0.3c0.9-0.7,2,0,3-0.6
+                                                                c0.6-0.4,1.2-0.9,1-1.6c-0.2-0.7-0.9-0.4-1.4-0.4c-0.8-0.1-1.6,0-2.5,0c-1.9,0-2.2-0.5-1.2-2.2c0.7-1.3,1.8-2.1,3.3-2.1
+                                                                c3.4,0,6.9-0.1,10.3,0c2.4,0.1,4.2,1.7,4.8,4.3c1.8,9.1,3.6,18.1,5.4,27.2c0.9,4.5,4,6.7,7.8,5.5c3.2-1,4.8-4,4-7.5
+                                                                c-0.3-1.4-0.8-2.8-0.6-4.2c0.5-4.2,3.2-6.9,7.6-7.3c0.8-0.1,1.6-0.1,2.5-0.1c38.8,0,77.6,0,116.4,0c18.6,0,37.1-0.1,55.7-0.1
+                                                                c2.7,0,2.7,0.1,2.3,2.8c-1.1,7.3-6.5,12.5-13.9,13.2c-1.2,0.1-1.9,0.3-2.2,1.8c-1.6,6.7-5.5,10.1-12.4,11
+                                                                c-1.8,0.2-3.9-0.2-5.2,0.7c-1.2,0.8-1.3,3-2,4.5c-2.9,6.1-8.4,7.7-14.5,7.9c-1.9,0-2.8,0.5-3.5,2.3c-2.6,6.8-7.9,9.9-15,9.9
+                                                                c-36.3,0-72.5,0-108.8,0c-5.1,0-10-1.2-14.5-3.8c-0.3-0.2-0.6-0.3-0.9-0.5c-0.1,0-0.3,0-0.7,0.1c3.4,3.7,6.7,7.3,10,10.8
+                                                                c1.6,1.8,3.2,3.6,4.9,5.3c1.1,1,0.8,1.6-0.2,2.4c-3.4,2.7-7,2.7-11.1,0.8c0.8,1.5,1.4,2.8,2.2,4.1c0.4,0.6,0.2,1.4-0.5,1.8
+                                                                c-3.4,1.8-6.7,2-9.9-0.4c-0.3-0.2-0.7-0.4-1.1-0.6c-0.1,0-0.3,0-0.5,0.1c0.2,0.7,0.3,1.4,0.5,2c0.5,1.6-0.5,3.2-2.2,3.5
+                                                                c-4.3,0.8-6.7-0.6-9.1-5.4c-0.8,0.2-0.7,0.9-1,1.4c-2.1,3.9-6.3,5.4-10.3,3.5c-0.8-0.4-0.8-0.8-0.6-1.4c0.3-1.2,0.8-2.3,0.7-3.5
+                                                                c-0.9-0.2-1.3,0.4-1.7,0.8c-3.2,2.1-6.3,1.8-9.5,0.1c-0.8-0.4-0.9-0.8-0.5-1.6c0.8-1.3,1.4-2.6,2.3-4.2c-3.9,1.9-7.5,2-10.8-0.5
+                                                                c-1.2-0.9-1.5-1.6-0.3-2.9c4.7-4.9,9.4-10,14-15c0.2-0.2,0.4-0.5,0.6-0.8c-0.7-0.4-1.1,0.1-1.6,0.4c-4.6,2.6-9.7,3.7-15,3.7
+                                                                c-35.9,0-71.8,0-107.8,0c-8.3,0-12.9-3.1-15.9-10.8c-0.5-1.2-1.1-1.5-2.2-1.5c-1.7,0-3.4-0.1-5.1-0.4c-6-1-9.8-4.6-11.5-10.4
+                                                                c-0.4-1.5-1.1-1.9-2.5-1.9c-1.6,0-3.1-0.3-4.7-0.5c-6.2-1.1-10-4.7-11.4-10.9c-0.2-1-0.4-1.5-1.6-1.6c-7.6-0.6-13-5.6-14.2-11.9
+                                                                c0-0.2-0.2-0.3-0.4-0.5C57,47.8,57,46.5,57,45.3z"></path>
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                        <path fill="#051039" d="M104,299.2H75l51-124h37.7l51,124h-29.9l-8.2-21h-64.4L104,299.2z M121.3,254.2h46.2l-23.1-60.1
+                                                            L121.3,254.2z"></path>
+                                                        <path fill="#051039" d="M346,213.1v11.6c0,31.7-11.4,38.5-48.1,38.5H253v36h-27v-124h71.7C334.6,175.2,346,181.8,346,213.1z
+                                                            M319,216.6c0-13.2-1.2-17.4-17.8-17.4H253v41h48.2c16.6,0,17.8-4.1,17.8-17.2V216.6z"></path>
+                                                        <path fill="#051039" d="M461,299.2h-94v-124h26v100h68V299.2z"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <g id="Calque_4">
+                                            </g>
+                                            <g id="Calque_4_-_copie" display="none">
+                                            </g>
+                                            <g id="Calque_6">
+                                            </g>
+                                        </svg> 
+                                    </a>
+                                </div>
+                            </div>
+                        <div class="swiper-slide active-slider">
+                            <a href="http://www.matson.com.cn/" target="_blank"><img class="img-fluid" src="../img/index/logo9.jpg" alt="matson"></a> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/jquery.eeyellow.Timeline.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/scrolltop.js"></script>
+</body>
+</html>

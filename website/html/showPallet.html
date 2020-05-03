@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/jquery-3.4.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/commo.css">
+  <link rel="stylesheet" href="../css/page5.css">
+  <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="../js/scrolltop.js"></script>
+  <link rel="shortcut icon" href="../img/index/title_logo.ico" type="image/x-icon">
+  <link rel="icon" href="../img/index/title_logo.ico" type="image/x-icon">
+  <title>货盘展示_尼恩供应链管理（上海）有限公司</title>
+</head>
+<body>
+  <main>
+    <h2 class="my-4 d-flex justify-content-center">
+      <span class="orangeBorderBottom pb-1 d-inline-block position-relative">
+        货盘展示
+      <div class="position-absolute"></div>
+      </span>
+    </h2>
+    <div class="container">
+      <div style="overflow:hidden;" id="xScroll">
+        <div style="overflow-x: auto; padding-bottom: 1rem;" id="xTable">
+          <table class="table FTable">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col" style="white-space: nowrap;">起始港/目的港</th>
+                <th scope="col" style="white-space: nowrap;">货盘数据</th>
+                <th scope="col" style="white-space: nowrap;">预计出运日期</th>
+                <th scope="col" style="white-space: nowrap;">货物描述</th>
+                <th scope="col" style="white-space: nowrap;">预定航空公司</th>
+                <th scope="col" style="white-space: nowrap;"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th style="min-width: 200px;" scope="row" class="px-0">
+                  <div class="row text-nowrap m-0">
+                    <div class="col-4 p-0">
+                      <div>
+                        <span class="tbEn">Shanghai</span>
+                      </div>
+                      <span>上海</span>
+                    </div>
+                    <div class="col-2 p-0 mx-3" style="background:url(../img/page5/list_from_to.png) no-repeat 101%;">
+                    </div>
+                    <div class="col-4 p-0">
+                      <div>
+                        <span class="tbEn">Shanghai</span>
+                      </div>
+                      <span>上海</span>
+                    </div>
+                  </div>
+                  
+                </th>
+                <td class="px-0">
+                  <div><span class="ky">空运出口</span></div>
+                  <span>4PLTS、163KG、1.3CBM</span>
+                </td>
+                <td class="px-0 ky">
+                  2020-03-25
+                </td>
+                <td class="px-0 ky">英文商品描述</td>
+                <td class="px-0 hk">O3</td>
+                <td class="px-0 bj">在线报价</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+<script src="../js/header.js"></script>
+<script>
+$('#xScroll').height($('#xTable').height())
+</script>
+</body>
+</html>

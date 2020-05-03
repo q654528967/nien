@@ -1,0 +1,24 @@
+.myBorder::after{
+content: '';
+width: 100%;
+height: 4px;
+background-color: rgba(255, 102, 9,0.8);
+position: absolute;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+padding-right: 1rem;
+bottom: 0;
+}
+.sectionContainer>div:nth-child(2){
+  height: 350px;
+  width: 350px;
+}
+p{
+  text-indent: 2em;
+}
+ol p{
+  text-indent: 0em;
+  
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/jquery-3.4.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/commo.css">
+  <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <title>登录_尼恩供应链管理（上海）有限公司</title>
+  <link rel="shortcut icon" href="../img/index/title_logo.ico" type="image/x-icon">
+  <link rel="icon" href="../img/index/title_logo.ico" type="image/x-icon">
+  <style>
+    body{
+      background-color: #f8f9fa;
+      height: 100vh;
+    }
+    .tooltip-inner{
+      background-color: rgba(230, 111, 67,.9);
+    }
+    .bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before{
+      border-left-color:rgba(230, 111, 67,.9);
+    }
+    #toast1{
+      background-color: rgba(230, 111, 67,.9);
+      top:10%;
+      left: 50%;
+      position: absolute;
+      min-width: 30em;
+      min-height: 3em;
+      transform: translateX(-50%);
+      color:#fff;
+    }
+    #login ul>li:last-child>a{
+      color:#ff6600;
+    }
+  </style>
+</head>
+<body>
+  <div class="w-100 h-75">
+    <div class="container h-100" >
+      <div id="login" class="card shadow my-3 mx-auto ml-sm-auto mr-sm-0" style="width:25em;height:25em;top:50%;transform:translateY(-50%);max-width:95%;max-height:88%;min-height: 24em;">
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center border-bottom-0">
+                <h3>客户业务管理系统</h3>
+              </li>
+              <li class="list-group-item border-bottom-0">
+                <form>
+                  <div class="form-group">
+                    <label>客户代码</label>
+                    <input placeholder="请输入客户代码" type="text" class="form-control" id="uname">
+                  </div>
+                  <div class="form-group">
+                    <label>客户密码</label>
+                    <input type="password" placeholder="请输入密码" class="form-control" id="upwd">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">登录</button>
+                </form>
+              </li>
+              <li class="list-group-item text-center border-bottom-0 d-flex">
+                <a href="#">忘记密码?</a><span class="ml-auto">还没账号?</span><a href="./register.html">现在注册</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="true" id="toast1">
+        <div class="toast-body text-center">
+          请您输入账号密码
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/scrolltop.js"></script>
+
+</body>
+</html>

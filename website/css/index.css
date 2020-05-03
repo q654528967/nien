@@ -1,0 +1,121 @@
+#develop h2{
+    font-size: 2rem;
+}
+/* #develop>div{
+    height: 100vh;
+} */
+.col-form-label{
+    line-height: 2.5;
+}
+section{
+    overflow: hidden;
+}
+#ndv .img-fluid{
+    width:60%;
+}
+.swiper-container{
+    --swiper-theme-color: #ff6600;
+}
+#partner h2{
+    font-size: 1.5em;
+}
+#partner>div:first-child {
+    border-bottom: #ff6600 solid 0.15em;
+}
+.svg-container{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    vertical-align: middle; 
+    overflow: hidden; 
+}
+/* #slider img{
+    height: 30vmax;
+    width: 100vw;
+} */
+.card img{
+    height: 12em;
+    max-height: 100%;
+}
+#business ul>li>a[class~=row]{
+    border-radius: 5px;
+    color: black;
+}
+#business ul>li>a p{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+#advantage .VivaTimeline dl dd .circ{
+    background-color: coral;
+}
+#news2 ul>li{
+    text-indent:1.3em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+#news2 ul>li a{
+    color:#333;
+    width: 100%;
+    text-align: justify;
+    font-size: 14px;
+}
+#news2 ul>li::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 9px;
+    left: 12px;
+    top: 14px;
+    border-left: 1px solid #333;
+    z-index: 0;
+}
+#news2 ul>li::after{
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 1px;
+    left: 8px;
+    top: 18px;
+    border-top: 1px solid #333;
+    z-index: 0;
+}
+#news2 div.col-12.col-sm-6.my-3 h4 a{
+    background-color: #ff6600;
+    padding: 0.2em 0.5em;
+    z-index: 1;
+}
+#news2 div.col-12.col-sm-6.my-3 h4{
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+}
+#news2 div.col-12.col-sm-6.my-3 h4::before{
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top:50%;
+    background-color: #666;
+    z-index: -1;
+}
+section{
+    overflow: hidden;
+}
+.event2{
+    margin-top: 42px;
+    margin-left: 20px;
+    width: 46%;
+}
+.pos-left {
+    margin-bottom: 1.5em;
+}
+#news2>div>div:nth-child(2)>div,#business>ul>li,.VivaTimeline>dl>dd{
+    animation-duration: 0.8s;
+}

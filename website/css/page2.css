@@ -1,0 +1,36 @@
+#section2>div{
+width: 150px;
+height: 150px;
+background-color: rgba(255,196,162,0.8);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+#section2>div:first-child{
+  top: 265px;
+  left: 28%;
+}
+#section2>div:nth-child(2){
+  top:0%;
+  left: 40%;
+}
+#section2>div:nth-child(3){
+  top:-64px;
+  left: 55%;
+}
+#section2>div:nth-child(4){
+  top:0;
+  left: 38%;
+}
+#section2>div:last-child{
+  top:-185px;
+  left: 53%;
+}
+.tooltip-inner{
+  background-color: bisque;
+}
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before{
+  border-bottom-color: bisque;
+}
